@@ -18,7 +18,7 @@ const LinkRenderer = ({ ...children }) => <Link {...children} />;
 const About = () => (
   <Main
     title="About"
-    description="Learn about Michael D'Angelo"
+    description="Learn about Justin Dominic"
   >
     <article className="post markdown" id="about">
       <header>
@@ -32,7 +32,7 @@ const About = () => (
         renderers={{
           Link: LinkRenderer,
         }}
-        escapeHtml={false}
+
       />
     </article>
   </Main>

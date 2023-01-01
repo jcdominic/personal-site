@@ -20,10 +20,11 @@ const App = () => (
   <BrowserRouter basename={PUBLIC_URL}>
     <Suspense fallback={<Main />}>
       <Switch>
-        <Route exact path="/" component={Index} />
-        <Route path="/about" component={About} />
+        <Route exact path="/" component={About} />
+        <Route path="/about" component={About} /> 
+        {/* MIGHT BE NEEDED LATER--TBD */}
         <Route path="/projects" component={Projects} />
-        <Route path="/stats" component={Stats} />
+        {/* <Route path="/stats" component={Stats} /> */}
         <Route path="/contact" component={Contact} />
         <Route path="/resume" component={Resume} />
         <Route component={NotFound} status={404} />
